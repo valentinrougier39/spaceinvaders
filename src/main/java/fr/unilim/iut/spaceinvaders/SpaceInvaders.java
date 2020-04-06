@@ -32,7 +32,7 @@ public class SpaceInvaders {
 			return recupererEspaceJeuDansChaineASCII();
 		}
 
-		private String recupererEspaceJeuDansChaineASCII() {
+		public String recupererEspaceJeuDansChaineASCII() {
 			StringBuilder espaceDeJeu = new StringBuilder();
 			
 			for (int y = 0; y < hauteur; y++) {
@@ -51,6 +51,10 @@ public class SpaceInvaders {
 			else
 				marque=MARQUE_VIDE;
 			return marque;
+		}
+		
+		public void deplacerVaisseauVersLaDroite() {
+	        if (vaisseau.abscisse()< (longueur-1)) vaisseau.seDeplacerVersLaDroite();
 		}
 
 		private boolean aUnVaisseauQuiOccupeLaPosition(int x, int y) {
