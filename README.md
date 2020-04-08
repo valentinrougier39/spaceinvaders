@@ -11,8 +11,7 @@ Les envahisseurs tentent de détruire le vaisseau en tirant dessus pendant qu'il
 * Glossaire
 
 
-## Semaine n°1 : du xx au xx avril <a id="semaine1"></a>
-
+## Semaine N°1 : du 30 Mars au 5 Avril 2020 <a id="semaine1"></a>
 
 ### Sprints et fonctionnalités réalisées 
 
@@ -49,7 +48,7 @@ Aucune
 ![Diagrammes de classes de la semaine 1](images/DiagrammeClasses_Semaine1.png)
 
 ### Nuage de mots du projet spaceinvaders (séance n°1)  
-(généré à l’aide de Source Code Word Cloud Generator avec la liste JavaBlacklist.txt fournie en annexe)
+(généré à l’aide de Source Code Word Cloud Generator avec la liste JavaBlacklist.txt fournie en annexe par Mme Blasquez)
  
 ![Nuage de mots de la semaine 1](images/NuageMots_Semaine1.png)
 
@@ -58,22 +57,23 @@ Aucune
 Aucune
 
 ### Remarques diverses
- Pour pouvoir, mettre en place les tests, il a été nécessaire d’ajouter une fonctionnalité supplémentaire qui permet de représenter l’espace de jeu dans une chaîne ASCII.
+Pour pouvoir, mettre en place les tests, il a été nécessaire d’ajouter une fonctionnalité supplémentaire qui permet de représenter l’espace de jeu dans une chaîne ASCII.
 
 -------------
 
-## Semaine n°2 : du xx au xx avril <a id="semaine2"></a>
+## Semaine N°2 : du 6 au 12 Avril 2020 <a id="semaine2"></a>
 
 Reprendre les rubriques de la semaine précédente et les compléter avec le travail réalisé cette semaine
 
  
 ### Sprints et fonctionnalités réalisées 
 
-#### Fonctionnalité n°x : Nommer la fonctionnalité
+#### Fonctionnalité n°2 : Dimensionner le vaisseau
 
-- Story développée pour réaliser cette implémentation  
-critère d'acceptance pour cette story  
-autre critère d'acceptance pour cette story
+- Etape n°1 : Positionner un nouveau vaisseau avec une dimension donnée
+- Etape n°2 : Faire en sorte qu'il soit impossible de positionner un nouveau vaisseau qui déborde de l'espace de jeu
+- Etape n°3 : Déplacer un vaisseau vers la droite en tenant compte de sa dimension
+- Etape n°4 : Déplacer un vaisseau vers la gauche en tenant compte de sa dimension
 
 
 #### Fonctionnalité n°y : Nommer la fonctionnalité
