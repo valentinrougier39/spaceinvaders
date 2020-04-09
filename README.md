@@ -73,16 +73,19 @@ Reprendre les rubriques de la semaine précédente et les compléter avec le tra
 #### Fonctionnalité n°2 : Dimensionner le vaisseau
 
 - Etape n°1 : Positionner un nouveau vaisseau avec une dimension donnée
+Le nouveau vaisseau est positionné aux coordonnées données.
 - Etape n°2 : Faire en sorte qu'il soit impossible de positionner un nouveau vaisseau qui déborde de l'espace de jeu
+Si un vaisseau est positionné en dehors de l'espace de jeu, alors une exception est lévé. Une autre exception sera également levée si le vaisseau est positionné en partie en dehors de l'espace de jeu. Le point d'origine du repère se situe en haut à gauche. Les coordonnées du vaisseau saisies correspondent aux coordonnées du point inférieur gauche du vaisseau.
 - Etape n°3 : Déplacer un vaisseau vers la droite en tenant compte de sa dimension
 - Etape n°4 : Déplacer un vaisseau vers la gauche en tenant compte de sa dimension
 
 
-#### Fonctionnalité n°y : Nommer la fonctionnalité
+#### Fonctionnalité n°3 : Choisir la vitesse du vaisseau
 
-- Story développée pour réaliser cette implémentation  
-critère d'acceptance pour cette story  
-encore un autre critère d'acceptance pour cette story
+- Etape n°1 : Ajouter la vitesse au vaisseau sans régression de comportement
+- Etape n°2 : Régler la vitesse du vaisseau
+- Etape n°3 : Faire en sorte que le déplacement se fasse correctmement pour une vitesse quelconque
+
 
 *Remarque : La liste des fonctionnalités peut varier d’une séance à l’autre, d’une personne à l'autre puisque chacun avance à son rythme pendant une séance de TP* 
 
@@ -135,6 +138,8 @@ A vous de compléter si vous en éprouvez le besoin
 
 
 * **Missile** :  projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire.
+
+* **Vitesse** : Grandeur physique correspondant aux déplacements du vaisseau. 
 
 La définition des termes métiers relatifs au projet doit se trouver dans le glossaire 
 Ce glossaire doit être compléter au fil des séances...
