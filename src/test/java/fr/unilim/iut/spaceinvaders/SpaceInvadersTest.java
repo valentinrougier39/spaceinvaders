@@ -213,6 +213,7 @@ import fr.unilim.iut.spaceinvaders.utils.*;
 	       "............VVV\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
 	    }
 	    
+	    
 	    @Test
 	    public void test_VaisseauAvancePartiellement_DeplacerVaisseauVersLaGauche() {
 
