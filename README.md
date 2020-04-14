@@ -52,7 +52,7 @@ Aucune
 ### Nuage de mots du projet spaceinvaders (séance n°1)  
 (généré à l’aide de Source Code Word Cloud Generator avec la liste JavaBlacklist.txt fournie en annexe par Mme Blasquez)
  
-![Nuage de mots de la semaine 1](images/WorldCloud_S1.png)
+![Nuage de mots de la semaine 1](images/WordCloud_S1.png)
 
 
 ### Difficultés rencontrées 
