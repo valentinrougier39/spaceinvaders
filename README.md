@@ -47,12 +47,12 @@ Aucune
 
 ### Diagramme de classes 
 
-![Diagrammes de classes de la semaine 1](images/DiagrammeClasses_Semaine1.png)
+![Diagrammes de classes de la semaine 1](images/DiagClasses_S1_Fin.png)
 
 ### Nuage de mots du projet spaceinvaders (séance n°1)  
 (généré à l’aide de Source Code Word Cloud Generator avec la liste JavaBlacklist.txt fournie en annexe par Mme Blasquez)
  
-![Nuage de mots de la semaine 1](images/NuageMots_Semaine1.png)
+![Nuage de mots de la semaine 1](images/WorldCloud_S1.png)
 
 
 ### Difficultés rencontrées 
@@ -97,13 +97,7 @@ Si une fonctionnalité est en cours de développement, **citer cette fonctionnal
 
 ### Diagramme de classes 
 
-Insérez ici une image du diagramme de classes que vous aurez au préalable déposer dans le répertoire images.  
-Seul le diagramme de classes des classes **metier** vous est demandé ici.   
-Vous ne représenterez pas sur ce diagramme les classes du **moteurJeu**.  
-Si vous êtes sous Eclipse, vous pouvez générer ce diagramme de classes à partir de votre code à l’aide du plug-in Object Aid UML Explorer dont le tutoriel est disponible [ici](https://github.com/iblasquez/tuto_ModelisationUML/tree/master/ObjectAid)  
-Rappel : pour sauvegarder le diagramme, appelez `Save As Image ` à l’aide d’un clic droit.
-
-
+![Diagrammes de classes de la semaine 1](images/DiagClasses_S2_Fin.png)
 
 ### Nuage de mots 
 
