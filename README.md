@@ -109,6 +109,35 @@ Aucune
 
 -------------
 
+## Semaine N°3 : du 13 au 19 Avril 2020 <a id="semaine3"></a>
+
+### Sprints et fonctionnalités réalisées 
+
+#### Fonctionnalité n°4 : Tirer un missile depuis le vaisseau
+- Quick Design Session : Comprendre ce qu'est un missile et refactorer
+  Définition d'un sprite. Un peu de refactoring a été necessaire, avec la création d'une Super-Classe : Sprite ; Vaisseau devient une sous-classe de Sprite. Pour terminer, on a modifié les constructeurs des classes Sprite et Vaisseau afin d'alléger le code, car certains étaient devenus obsolètes.
+
+### Fonctionnalité en cours d’implémentation : 
+Aucune
+
+### Diagramme de classes 
+
+![Diagrammes de classes de la semaine 3](images/DiagClasses_S3_Fin.png)
+
+### Nuage de mots du projet spaceinvaders (séance n°1)  
+(généré à l’aide de Source Code Word Cloud Generator avec la liste JavaBlacklist.txt fournie en annexe par Mme Blasquez)
+ 
+![Nuage de mots de la semaine 3](images/WordCloud_S3.png)
+
+
+### Difficultés rencontrées 
+Aucune
+
+### Remarques diverses
+Pour pouvoir, mettre en place les tests, il a été nécessaire d’ajouter une fonctionnalité supplémentaire qui permet de représenter l’espace de jeu dans une chaîne ASCII.
+
+-------------
+
 
 
 
@@ -122,6 +151,7 @@ Aucune
 * **Missile** :  projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire.
 
 * **Vitesse** : Grandeur physique correspondant aux déplacements du vaisseau. 
+* **Sprint** : Ce terme désigne un élément graphique se déplaçant sur l'écran, comme un missile ou un vaisseau par exemple...
 
 ------------- 
 
