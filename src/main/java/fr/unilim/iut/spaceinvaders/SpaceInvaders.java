@@ -1,19 +1,17 @@
 package fr.unilim.iut.spaceinvaders;
+import fr.unilim.iut.spaceinvaders.moteurjeu.*;
 import fr.unilim.iut.spaceinvaders.utils.*;
 
-public class SpaceInvaders {
+public class SpaceInvaders implements Jeu {
 
-	    private static final char MARQUE_FIN_LIGNE = '\n';
-		private static final char MARQUE_VIDE = '.';
-		private static final char MARQUE_VAISSEAU = 'V';
-		int longueur;
+    int longueur;
 	    int hauteur;
 	    Vaisseau vaisseau;
 	    
 	    public SpaceInvaders(int longueur, int hauteur) {
 		   this.longueur = longueur;
 		   this.hauteur = hauteur;
-	   }    
+	   }
 	    public String recupererEspaceJeuDansChaineASCII() {
 			StringBuilder espaceDeJeu = new StringBuilder();
 			
@@ -21,7 +19,7 @@ public class SpaceInvaders {
 				for (int x = 0; x < longueur; x++) {
 					espaceDeJeu.append(recupererMarqueDeLaPosition(x, y));
 				}
-				espaceDeJeu.append(MARQUE_FIN_LIGNE);
+				espaceDeJeu.append(Constante.MARQUE_FIN_LIGNE);
 			}
 			return espaceDeJeu.toString();
 		}
@@ -52,7 +50,7 @@ public class SpaceInvaders {
 			return ((x >= 0) && (x < longueur)) && ((y >= 0) && (y < hauteur));
 		}
 	    
-		private boolean aUnVaisseau() {
+		public boolean aUnVaisseau() {
 			return vaisseau!=null;
 		}	
 		
@@ -63,9 +61,9 @@ public class SpaceInvaders {
 		private char recupererMarqueDeLaPosition(int x, int y) {
 			char marque;	 
 			if (this.aUnVaisseauQuiOccupeLaPosition(x, y))
-				marque=MARQUE_VAISSEAU;
+				marque=Constante.MARQUE_VAISSEAU;
 			else
-				marque=MARQUE_VIDE;
+				marque=Constante.MARQUE_VIDE;
 			return marque;
 		}
 
@@ -91,6 +89,28 @@ public class SpaceInvaders {
 			
 		
 		}
+		
+		public Vaisseau recupererVaisseau() {
+			return this.vaisseau;
+		}
+		
+		/*Moteur graphique */
+		
+		@Override
+		public void evoluer(Commande commandeUser) {
+			if (commandeUser.gauche) {
+	              deplacerVaisseauVersLaGauche();
+	          }
+			
+	         if (commandeUser.droite) {
+		        deplacerVaisseauVersLaDroite();
+	         }
+		}
+		
+		@Override
+	      public boolean etreFini() {
+	         return false; 
+	      }
 
 }
 		
