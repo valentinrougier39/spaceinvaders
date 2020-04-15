@@ -8,7 +8,7 @@ Les envahisseurs tentent de détruire le vaisseau en tirant dessus pendant qu'il
 * [Semaine 1 : 30 Mars au 5 Avril 2020](#semaine1)
 * [Semaine 2 : 6 Avril au 12 Avril 2020](#semaine2)
 * [Semaine 3 : 13 Avril au 19 Avril 2020](#semaine3)
-* Glossaire
+* [Glossaire](#glossaire)
 
 
 
@@ -17,7 +17,7 @@ Les envahisseurs tentent de détruire le vaisseau en tirant dessus pendant qu'il
 
 ### Sprints et fonctionnalités réalisées 
 
-#### Fonctionnalité n°1 : Déplacer un vaisseau dans l'espace de jeu (fini)
+#### Fonctionnalité n°1 : Déplacer un vaisseau dans l'espace de jeu (Terminée)
 
 - Story n°1 : Créer un espace de jeu  
 Un espace de jeu est créé aux dimensions données (2D) 
@@ -47,12 +47,12 @@ Aucune
 
 ### Diagramme de classes 
 
-![Diagrammes de classes de la semaine 1](images/DiagrammeClasses_Semaine1.png)
+![Diagrammes de classes de la semaine 1](images/DiagClasses_S1_Fin.png)
 
 ### Nuage de mots du projet spaceinvaders (séance n°1)  
 (généré à l’aide de Source Code Word Cloud Generator avec la liste JavaBlacklist.txt fournie en annexe par Mme Blasquez)
  
-![Nuage de mots de la semaine 1](images/NuageMots_Semaine1.png)
+![Nuage de mots de la semaine 1](images/WordCloud_S1.png)
 
 
 ### Difficultés rencontrées 
@@ -70,7 +70,7 @@ Reprendre les rubriques de la semaine précédente et les compléter avec le tra
  
 ### Sprints et fonctionnalités réalisées 
 
-#### Fonctionnalité n°2 : Dimensionner le vaisseau
+#### Fonctionnalité n°2 : Dimensionner le vaisseau (Terminée)
 
 - Etape n°1 : Positionner un nouveau vaisseau avec une dimension donnée
 Le nouveau vaisseau est positionné aux coordonnées données.
@@ -80,41 +80,23 @@ Si un vaisseau est positionné en dehors de l'espace de jeu, alors une exception
 - Etape n°4 : Déplacer un vaisseau vers la gauche en tenant compte de sa dimension
 
 
-#### Fonctionnalité n°3 : Choisir la vitesse du vaisseau
+#### Fonctionnalité n°3 : Choisir la vitesse du vaisseau (Terminée)
 
 - Etape n°1 : Ajouter la vitesse au vaisseau sans régression de comportement
 - Etape n°2 : Régler la vitesse du vaisseau
 - Etape n°3 : Faire en sorte que le déplacement se fasse correctmement pour une vitesse quelconque
 
 
-*Remarque : La liste des fonctionnalités peut varier d’une séance à l’autre, d’une personne à l'autre puisque chacun avance à son rythme pendant une séance de TP* 
-
-
 ### Fonctionnalité en cours d'implémentation 
-Si une fonctionnalité est en cours de développement, **citer cette fonctionnalité** et ses critères d'acceptance, sinon mentionner **aucune**.
-
-
+Aucune
 
 ### Diagramme de classes 
 
-Insérez ici une image du diagramme de classes que vous aurez au préalable déposer dans le répertoire images.  
-Seul le diagramme de classes des classes **metier** vous est demandé ici.   
-Vous ne représenterez pas sur ce diagramme les classes du **moteurJeu**.  
-Si vous êtes sous Eclipse, vous pouvez générer ce diagramme de classes à partir de votre code à l’aide du plug-in Object Aid UML Explorer dont le tutoriel est disponible [ici](https://github.com/iblasquez/tuto_ModelisationUML/tree/master/ObjectAid)  
-Rappel : pour sauvegarder le diagramme, appelez `Save As Image ` à l’aide d’un clic droit.
-
-
+![Diagrammes de classes de la semaine 2](images/DiagClasses_S2_Fin.png)
 
 ### Nuage de mots 
-
-Insérez ici une image du nuage de mots que vous aurez au préalable déposer dans le répertoire images. 
- 
-(généré à l’aide de Source Code Word Cloud Generator avec la liste JavaBlacklist.txt fournie en annexe)
-
-Le nuage de mots sera réalisé à l’aide de Source Code Word Cloud Generator et du contenu du fichier `JavaBlacklist.txt` disponible [ici](https://github.com/iblasquez/enseignement-iut-m2104-conception/tree/master/ressources).  
-Si vous utilisez un autre outil que celui-là pour générer ce nuage de mots, précisez-le.
-Le nuage de mots sera généré sur les classes métier ne pas prendre en compte les classes du moteur graphique quand celui-ci sera mis en place.
-
+(généré à l’aide de Source Code Word Cloud Generator avec la liste JavaBlacklist.txt fournie en annexe par Mme Blasquez)
+![Nuage de mots de la semaine 2](images/WordCloud_S2.png)
  
 
 
@@ -122,7 +104,7 @@ Le nuage de mots sera généré sur les classes métier ne pas prendre en compte
 Aucune
 
 ### Remarques diverses
-A vous de compléter si vous en éprouvez le besoin
+Aucune
 
 
 -------------
@@ -140,9 +122,6 @@ A vous de compléter si vous en éprouvez le besoin
 * **Missile** :  projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire.
 
 * **Vitesse** : Grandeur physique correspondant aux déplacements du vaisseau. 
-
-La définition des termes métiers relatifs au projet doit se trouver dans le glossaire 
-Ce glossaire doit être compléter au fil des séances...
 
 ------------- 
 
