@@ -1,78 +1,51 @@
 package fr.unilim.iut.spaceinvaders;
 
-public class Vaisseau {
+import fr.unilim.iut.spaceinvaders.utils.*;
 
-    Position origine;
-    Dimension dimension;
-    private int vitesse;
+public class Vaisseau extends Sprite {
 
 
-    public Vaisseau(int longueur, int hauteur) {
-	    this(longueur, hauteur, 0, 0);
-    }
+	public Vaisseau(Dimension dimension, Position positionOrigine, int vitesse) {
+		super(dimension, positionOrigine, vitesse);
+	}
+	
+	public Missile tirerUnMissile(Dimension dimensionMissile, int vitesseMissile) {
+        
+        if (dimensionMissile.longueur > this.dimension.longueur)
+            throw new MissileException ("Probleme missile");
+            
+           Position positionOrigineMissile = calculerLaPositionDeTirDuMissile(dimensionMissile);
 
-   public Vaisseau(int longueur, int hauteur, int x, int y) {
-	   this(new Dimension(longueur, hauteur), new Position(x, y));
-    }
+           return new Missile(dimensionMissile, positionOrigineMissile, vitesseMissile);
+       }
 
-    public Vaisseau(Dimension dimension, Position positionOrigine) {
-	    this(dimension, positionOrigine,1);
-    }
     
-    public Vaisseau(Dimension dimension, Position positionOrigine, int vitesse) {
-		this.dimension = dimension;
-		this.origine = positionOrigine;
-		this.vitesse = vitesse;
-	}
     
-    	
-    public boolean occupeLaPosition(int x, int y) {
-	     return (estAbscisseCouverte(x) && estOrdonneeCouverte(y));
-    }
-
-	private boolean estOrdonneeCouverte(int y) {
-		return (ordonneeLaPlusBasse()<=y) && (y<=ordonneeLaPlusHaute());
+	private Position positionOrigineMissile(int abscisseOrigineMissile, int ordonneeeOrigineMissile) {
+		return new Position(abscisseOrigineMissile, ordonneeeOrigineMissile);
 	}
 
-	public int ordonneeLaPlusHaute() {
-		return this.origine.ordonnee();
+	private int ordonneeOrigineMissile() {
+		return this.ordonneeLaPlusBasse() - 1;
 	}
 
-	public int ordonneeLaPlusBasse() {
-		return ordonneeLaPlusHaute()-this.dimension.hauteur()+1;
+	private int abscisseOrigineMissile(Dimension dimensionMissile, int abscisseMilieuVaisseau) {
+		return abscisseMilieuVaisseau - (dimensionMissile.longueur() / 2);
 	}
 
-	private boolean estAbscisseCouverte(int x) {
-		return (abscisseLaPlusAGauche()<=x) && (x<=abscisseLaPlusADroite());
-	}
-
-	public int abscisseLaPlusADroite() {
-		return this.origine.abscisse()+this.dimension.longueur()-1;
+	private int abscisseMilieuVaisseau() {
+		return this.abscisseLaPlusAGauche() + (this.longueur() / 2);
 	}
 	
-	public void seDeplacerVersLaDroite() {
-	    this.origine.changerAbscisse(this.origine.abscisse()+vitesse);
-   }
+	public Position calculerLaPositionDeTirDuMissile(Dimension dimensionMissile) {
+		int abscisseMilieuVaisseau = abscisseMilieuVaisseau();
+		int abscisseOrigineMissile = abscisseOrigineMissile(dimensionMissile, abscisseMilieuVaisseau);
 
-   public void seDeplacerVersLaGauche() {
-	    this.origine.changerAbscisse(this.origine.abscisse()-vitesse);
-  }
-	
-	public int abscisseLaPlusAGauche() {
-        return this.origine.abscisse();
-	}
-	
-	public void positionner(int x, int y) {
-		  this.origine.changerAbscisse(x);
-		  this.origine.changerOrdonnee(y);
-    }
-	
-	public int hauteur() {
-		return this.dimension.hauteur();
-	}
-
-	public int longueur() {
-		return this.dimension.longueur();
+		int ordonneeeOrigineMissile = ordonneeOrigineMissile();
+		Position positionOrigineMissile = positionOrigineMissile(abscisseOrigineMissile, ordonneeeOrigineMissile);
+		
+		return positionOrigineMissile;
+		
 	}
 	
 	
