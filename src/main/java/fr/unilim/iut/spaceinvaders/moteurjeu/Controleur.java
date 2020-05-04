@@ -48,26 +48,30 @@ public class Controleur implements KeyListener {
 	public void keyPressed(KeyEvent e) {
 
 		switch (e.getKeyCode()) {
-		// si on appuie sur 'q',commande joueur est gauche
+		// Description des actions des touches du clavier sur le jeu : déplacement avec les flèches
 		case KeyEvent.VK_LEFT:
 			this.commandeEnCours.gauche = true;
 			this.commandeARetourner.gauche = true;
 			break;
-		// si on appuie sur 'd',commande joueur est droite
+		
 		case KeyEvent.VK_RIGHT:
 			this.commandeEnCours.droite = true;
 			this.commandeARetourner.droite = true;
 			break;
-		// si on appuie sur 'z',commande joueur est haut
+		
 		case KeyEvent.VK_UP:
 			this.commandeEnCours.haut = true;
 			this.commandeARetourner.haut = true;
 			break;
-		// si on appuie sur 's',commande joueur est bas
+		
 		case KeyEvent.VK_DOWN:
 			this.commandeEnCours.bas = true;
 			this.commandeARetourner.bas = true;
 			break;
+		case KeyEvent.VK_SPACE:
+			this.commandeEnCours.tir=true;
+			this.commandeARetourner.tir =true;
+			
 		default:
 			break;
 		}
@@ -92,6 +96,8 @@ public class Controleur implements KeyListener {
 		case KeyEvent.VK_DOWN:
 			this.commandeEnCours.bas = false;
 			break;
+		case KeyEvent.VK_SPACE:
+			this.commandeEnCours.tir =false;
 		default :
 			break;
 		}
