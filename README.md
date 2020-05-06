@@ -140,8 +140,7 @@ Aucune
 ### Sprints et fonctionnalités réalisées 
 
 #### Fonctionnalité n°5 : Ajouter un envahisseur dans le jeu
-- Quick Design Session : Comprendre ce qu'est un missile et refactorer
-  Définition d'un sprite. Un peu de refactoring a été necessaire, avec la création d'une Super-Classe : Sprite ; Vaisseau devient une sous-classe de Sprite. Pour terminer, on a modifié les constructeurs des classes Sprite et Vaisseau afin d'alléger le code, car certains étaient devenus obsolètes.
+Ajout de nouveaux tests pour contrôler que l'envahisseur reste dans les limtes de jeu. 
 
 ### Diagramme de classes 
 
@@ -154,7 +153,7 @@ Aucune
 
 
 ### Difficultés rencontrées 
-Le passage en autonomie totale est un peu rude au départ ! 
+Le passage en autonomie totale est un peu rude au départ ! Après la création d'une classe Envahisseur hérité de la classe Sprite comme tout objet pouvant se déplacer. 
 
 
 
