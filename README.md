@@ -134,8 +134,29 @@ Aucune
 ### Difficultés rencontrées 
 Aucune
 
-### Remarques diverses
-Pour pouvoir, mettre en place les tests, il a été nécessaire d’ajouter une fonctionnalité supplémentaire qui permet de représenter l’espace de jeu dans une chaîne ASCII.
+-------------
+## Semaine N°4 : du 04 au 10 Mai 2020 <a id="semaine4"></a>
+
+### Sprints et fonctionnalités réalisées 
+
+#### Fonctionnalité n°5 : Ajouter un envahisseur dans le jeu
+- Quick Design Session : Comprendre ce qu'est un missile et refactorer
+  Définition d'un sprite. Un peu de refactoring a été necessaire, avec la création d'une Super-Classe : Sprite ; Vaisseau devient une sous-classe de Sprite. Pour terminer, on a modifié les constructeurs des classes Sprite et Vaisseau afin d'alléger le code, car certains étaient devenus obsolètes.
+
+### Diagramme de classes 
+
+![Diagrammes de classes de la semaine 3](images/DiagClasses_S4_Fin.png)
+
+### Nuage de mots du projet spaceinvaders (séance n°1)  
+(généré à l’aide de Source Code Word Cloud Generator avec la liste JavaBlacklist.txt fournie en annexe par Mme Blasquez)
+ 
+![Nuage de mots de la semaine 3](images/WordCloud_S4.png)
+
+
+### Difficultés rencontrées 
+Le passage en autonomie totale est un peu rude au départ ! 
+
+
 
 -------------
 
@@ -146,13 +167,13 @@ Pour pouvoir, mettre en place les tests, il a été nécessaire d’ajouter une 
 
 * **Vaisseau** :  véhicule commandé par le joueur, pouvant se déplacer de droite à gauche et ayant la possibilité de lancer des missiles destinés à détruire le(s) envahisseurs.
 
-* **Envahisseur**  :  ennemi qui apparaît à l'écran, se déplace automatiquement et qui doit être détruit par un missile lancé depuis le vaisseau du joueur.
+* **Envahisseur**  :  ennemi qui apparaît à l'écran, se déplace automatiquement de droite à gauche et qui doit être détruit par un missile lancé depuis le vaisseau du joueur.
 
 
-* **Missile** :  projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire.
+* **Missile** :  projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire. Le missile ets envoyé depuis le milieu du vaisseau
 
 * **Vitesse** : Grandeur physique correspondant aux déplacements du vaisseau. 
-* **Sprint** : Ce terme désigne un élément graphique se déplaçant sur l'écran, comme un missile ou un vaisseau par exemple...
+* **Sprite** : Ce terme désigne un élément graphique se déplaçant sur l'écran, comme un missile ou un vaisseau par exemple...
 
 ------------- 
 
